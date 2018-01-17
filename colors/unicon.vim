@@ -135,8 +135,8 @@ call s:HL('Todo', s:magenta, s:none, 'bold')
 "" ---------------------------------------------------------------------
 call s:HL('SpecialKey', s:base3, s:none, 'bold')
 call s:HL('NonText', s:base3, s:none, 'bold')
-call s:HL('StatusLine', s:base6, s:base2, 'reverse')
-call s:HL('StatusLineNC', s:base4, s:base2, 'reverse')
+call s:HL('StatusLine', s:base5, s:base2, 'reverse')
+call s:HL('StatusLineNC', s:base3, s:base2, 'reverse')
 call s:HL('Visual', s:base7, s:base3)
 call s:HL('VisualNOS', s:base7, s:base3, 'reverse')
 call s:HL('Directory', s:green)
@@ -178,6 +178,21 @@ call s:HL('Cursor', s:base1, s:base8)
 call s:HL('lCursor', s:base1, s:magenta)
 call s:HL('MatchParen', s:base7, s:base3, 'bold')
 
+call s:HL('NormalMode', s:base1, s:green, 'bold')
+call s:HL('InsertMode', s:base8, s:blue, 'bold')
+call s:HL('VisualMode', s:base1, s:orange, 'bold')
+call s:HL('CommandMode', s:base8, s:red, 'bold')
+call s:HL('ReplaceMode', s:base8, s:red, 'bold')
+
+call s:HL('User1', s:base2, s:base1)
+call s:HL('User2', s:base2, s:base2)
+call s:HL('User3', s:base2, s:base3)
+call s:HL('User4', s:base2, s:base4)
+call s:HL('User5', s:base2, s:base5)
+call s:HL('User6', s:base2, s:base6)
+call s:HL('User7', s:base2, s:base7)
+call s:HL('User8', s:base2, s:base8)
+" call s:HL('User9', s:none, s:none)
 "}}}
 " Reread colorscheme when vim is transferring from terminal to gui mode.
 autocmd GUIEnter * if !has('gui_running') | exe "colorscheme " . g:colors_name | endif
